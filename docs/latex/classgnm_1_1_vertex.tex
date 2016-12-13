@@ -1,0 +1,77 @@
+\hypertarget{classgnm_1_1_vertex}{}\section{gnm\+:\+:Vertex$<$ T, N $>$ Class Template Reference}
+\label{classgnm_1_1_vertex}\index{gnm\+::\+Vertex$<$ T, N $>$@{gnm\+::\+Vertex$<$ T, N $>$}}
+
+
+\hyperlink{classgnm_1_1_vertex}{Vertex} of a graph with N adjacency lists.  
+
+
+
+
+{\ttfamily \#include $<$vertex.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgnm_1_1_vertex_a0a2362545512a6ab1e8153fec136e6c8}{Vertex} (T t\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classgnm_1_1_vertex}{Vertex} with the desired value stored. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classgnm_1_1_edge}{Edge} $\ast$ $>$ \& {\bfseries adj\+\_\+list} (std\+::size\+\_\+t i)\hypertarget{classgnm_1_1_vertex_a0b2cedea80de0423c0d623672c81ab73}{}\label{classgnm_1_1_vertex_a0b2cedea80de0423c0d623672c81ab73}
+
+\item 
+void {\bfseries add\+\_\+adj} (const \hyperlink{classgnm_1_1_edge}{Edge} $\ast$t\+\_\+adjacency, std\+::size\+\_\+t i)\hypertarget{classgnm_1_1_vertex_af51fe71b9c41071f2fb06ee38b8a35b0}{}\label{classgnm_1_1_vertex_af51fe71b9c41071f2fb06ee38b8a35b0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries value}\hypertarget{classgnm_1_1_vertex_a1ae4e06b3e84c754b907655052d5e717}{}\label{classgnm_1_1_vertex_a1ae4e06b3e84c754b907655052d5e717}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, std\+::size\+\_\+t N$>$\\*
+class gnm\+::\+Vertex$<$ T, N $>$}
+
+\hyperlink{classgnm_1_1_vertex}{Vertex} of a graph with N adjacency lists. 
+
+Defines the behavior of the class \hyperlink{classgnm_1_1_vertex}{Vertex} when it have more than one type of adjacency.
+
+Exemple of usage\+: If you have to calculate the the maximum flow of three diferent things in your system, instead of having three different graphs you can use three adjacency lists on every vertex.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the value stored in the \hyperlink{classgnm_1_1_vertex}{Vertex}. \\
+\hline
+{\em N} & Number of diferent kind of adjacencys the vertex may have. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gnm\+::\+Vertex@{gnm\+::\+Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!gnm\+::\+Vertex@{gnm\+::\+Vertex}}
+\subsubsection[{\texorpdfstring{Vertex(\+T t\+\_\+value)}{Vertex(T t_value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T, std\+::size\+\_\+t N$>$ {\bf gnm\+::\+Vertex}$<$ T, N $>$\+::{\bf Vertex} (
+\begin{DoxyParamCaption}
+\item[{T}]{t\+\_\+value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classgnm_1_1_vertex_a0a2362545512a6ab1e8153fec136e6c8}{}\label{classgnm_1_1_vertex_a0a2362545512a6ab1e8153fec136e6c8}
+
+
+Create a \hyperlink{classgnm_1_1_vertex}{Vertex} with the desired value stored. 
+
+The constructor \hyperlink{classgnm_1_1_vertex}{Vertex} recieves a value and stores it using std\+::move().
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+value} & The value that the \hyperlink{classgnm_1_1_vertex}{Vertex} will store. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+std\+::move() 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/graph/\hyperlink{vertex_8h}{vertex.\+h}\item 
+src/graph/vertex.\+cpp\end{DoxyCompactItemize}
